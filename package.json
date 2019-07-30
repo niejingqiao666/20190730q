@@ -1,0 +1,17 @@
+{
+  "name": "0730",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+    "less":"lessc css/1.less css/1.css -x"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nrm": "^1.2.1",
+    "yarn": "^1.17.3"
+  }
+}

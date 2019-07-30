@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>点击变颜色</title>
+    <!--import css-->
+    <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            html,body{
+                width:100%;
+                height:100%;
+                overflow: hidden;
+            }
+            button{
+                padding:40px;
+                line-height:40px;
+            }
+    
+    </style>
+</head>
+<body style="background-color: white">
+
+    <button id="changeBtn">点击变色</button>
+    <script>
+         let body = document.body;
+		let changeBtn = document.getElementById('changeBtn');
+		changeBtn.onclick=function () {
+            // 获取当前的背景颜色 元素.style.xxx只能获取行内样式（颜色在样式中使用16进制方式，JS中获取到的是RGB的值）
+            console.log(1);
+			let bg = body.style.backgroundColor;
+			switch (bg) {
+				case 'white':
+					body.style.backgroundColor = 'red';
+					break;
+				case 'red':
+					body.style.backgroundColor = 'green';
+					break;
+				case 'green':
+					body.style.backgroundColor = 'blue';
+					break;
+				default:
+					body.style.backgroundColor = 'white';
+			}
+		}
+
+    </script>
+</body>
+</html>
